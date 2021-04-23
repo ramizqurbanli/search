@@ -1,0 +1,96 @@
+<html lang="en" oncontextmenu="return false">
+ <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" href="search-512.png" title="" type="icon/png" />
+<link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width , initial-size=1.0 shrink-to-fit=no"/>
+ <meta name="theme-color" content="#C0BDB5">
+   <title>Search Box</title>
+ </head>
+  <body>
+  <aside>
+      <span style="color:#126EA1;user-select: none;"><label for="search">Powered by KidNet</label></span>
+  </aside>
+  <style media="all">n{
+        font-family: 'Hanalei Fill',cursive;
+       background-color: #59ff00;
+       border-radius: 30px;
+      }
+input::title{
+  color:#6FE945;
+}      
+::selection{
+  background-color: #2cf026;
+  color:#E46A08;
+}
+      label{
+        font-family: "Hanalei Fill",cursive;
+      }
+
+     form{
+      user-select: text;
+        margin:80px;
+         display: inline-flex;
+     }
+    html{
+      background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 212, 255) 100%);
+  background-size:cover;
+        display: grid;
+    }
+    input{
+      user-select: none;
+      -webkit-user-modify: read-only;
+        -moz-user-modify: read-only;
+      background-color:#008080;
+   border-radius: 10px;
+}
+  input::placeholder{
+    color: #BFF7F0;
+  }
+   button{
+    user-select: none;
+    border-radius: 4px;
+    background-color: rgb(59,125,72);
+background: linear-gradient(90deg, rgba(59,125,72,0.2574679943100996) 0%, rgba(135,238,28,1) 0%, rgba(0,212,255,1) 100%);
+   }
+@media (min-width: 700px){
+  form{
+    width: 70%;
+
+  }
+input::placeholder{
+    font-size: 22px
+  }
+input{
+  margin-top: 100px;
+    margin-left: 100px;
+    width: 50%;
+    height:30px;
+    margin-left: 35%;
+    font-size:22px
+}
+
+button{
+    margin-top: 100px;
+      margin-right: 100px;
+      width:40px;
+
+}
+}
+}
+    </style>
+  <div id="img"></div>
+    <form action="https://google.com/search?q=" text-align="center" method="get">
+
+        <!-input which will send text to google search -->
+            <input id="search" class="search input" height="25px" type="text" autocomplete="off" name="q" id="search" required=""  title="Search the Web" placeholder="Search..." />
+
+            <button type="submit" class="search btn"><img src="search-512.png"  draggable="false" width="10px"/></button>
+    </form>
+<script >console.warn("don't copy my code")</script>    
+  </body>
+
+</html>
